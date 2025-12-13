@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 
 namespace CRM
@@ -14,3 +15,17 @@ namespace CRM
         public DateTime DateVente { get; set; } = DateTime.Now;
     }
 }
+=======
+using System;
+
+public class Vente
+{
+    public int Id { get; set; }
+    public required string Produit { get; set; }
+    public double Montant { get; set; }
+    public DateTime DateVente { get; set; } = DateTime.Now;
+
+    public required Client Client { get; set; }
+    public required Employe EmployeResponsable { get; set; }
+}
+>>>>>>> e5661b02a036e3233ff0c69dafca978054cfe095
